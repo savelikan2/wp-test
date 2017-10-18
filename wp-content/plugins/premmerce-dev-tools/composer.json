@@ -1,0 +1,26 @@
+{
+  "description": "Wordpress plugin developer tools",
+  "name": "premmerce/premmerce-dev-tools",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0",
+  "authors": [
+    {
+      "name": "Premmerce",
+      "email": "info@premmerce.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Premmerce\\DevTools\\": "src"
+    },
+    "files": [
+      "functions.php"
+    ]
+  },
+  "require": {
+    "symfony/var-dumper": "^3.3",
+    "fzaninotto/faker": "^1.6",
+    "bheller/images-generator": "^1.0",
+    "symfony/stopwatch": "^3.3"
+  }
+}
